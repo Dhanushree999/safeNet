@@ -26,14 +26,14 @@ def check_website():
       result_label.config(text="⚠ Unsafe!\n" + "\n".join(reasons), fg="red") 
         
    else:
-       result_label.config(text="✅ Safe Website", fg="green")
+       result_label.config(text="Safe Website", fg="green")
        
        history_label.config(text="History: " + ", ".join(history))
        danger_label.config(text="Danger Count: " + str(danger_count)) 
         
 # GUI
 root = tk.Tk()
-root.title("SafeNet 🌿")
+root.title("SafeNet")
 root.geometry("300x250")
 entry = tk.Entry(root, width=30, font=("Arial", 12))
 entry.pack(pady=10)
